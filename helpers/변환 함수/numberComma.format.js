@@ -9,7 +9,6 @@
 
 const onlyNumber = /\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g; // 1000단위를 체크하는 유효성 검사
 
-const { validations } = validateConstant;
 export default function numberCommaFormat(number) {
   return number.toString().replace(onlyNumber, ",");
 }
